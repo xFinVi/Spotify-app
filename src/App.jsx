@@ -183,6 +183,7 @@ function App() {
   const logout = () => {
     setToken("");
     window.localStorage.removeItem("token");
+    window.location.replace("/");
   };
 
   async function getUserId(accessToken) {
