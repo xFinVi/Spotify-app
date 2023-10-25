@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from "uuid";
 import SearchBar from "./components/SearchBar/searchBar";
 import SearchResult from "./components/SearchResults/SearchResults";
 import Playlists from "./components/Playlists/Playlists";
-import { Spotify } from "./util/spotify";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
