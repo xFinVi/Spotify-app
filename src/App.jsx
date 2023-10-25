@@ -286,9 +286,10 @@ const addTracksToPlaylist = async (playlistId) => {
     <>
       <h1 className="mb-5">Spotify - React</h1>
       {token ? (
-        
+        <>
+        <button className=" btn btn-danger" onClick={logout}>Logout</button>
       <div className="grid-container mt-5">
-      <button className=" btn btn-danger" onClick={logout}>Logout</button>
+      
         <div className="grid-1 mx-auto">
           <SearchBar
             searchInput={searchInput}
@@ -318,6 +319,7 @@ const addTracksToPlaylist = async (playlistId) => {
         
        
       </div>
+      </>
       
       ) : (
 
