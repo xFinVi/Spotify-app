@@ -1,0 +1,39 @@
+.track > * {
+    margin: 0;
+    padding: 0;
+}
+.track {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0;
+    margin: 1rem 0;
+    gap: 10px;
+}
+.track h3 {
+    font-size: .85rem;
+}
+
+
+.track-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: .85rem;
+    margin-top: 1rem;
+}
+
+.btn-track {
+    margin: 0;
+    padding:  .3rem .5rem;
+    font-size: 1rem !important;
+    background-color: transparent;
+    border: 1px solid #777;
+    border-radius: 50%;
+    color: #999;
+  
+
+}
+
+
+

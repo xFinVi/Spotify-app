@@ -1,0 +1,100 @@
+.playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    border: none;
+    background-color: #101010;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+
+  .playlist-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    margin: 1rem;
+  }
+  
+  .playlist-title {
+    color: #ebebeb;
+    width: 80%;
+    text-align: center;
+    padding: .6rem;
+  }
+  
+  
+  .tracks-inPlaylist {
+    width: 70%;
+    padding: .5rem 0;
+  }
+  .btn-playlist {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn-del {
+    font-size: 1.2rem;
+    padding: 0rem;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .save-btn {
+    margin: 1rem;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  
+    color: #fff;
+  }
+  .playlist-save svg {
+    width: 1.5em;
+    height: 1.2em;
+  }
+  
+  .playlist-track {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #777;
+    padding: 1rem;
+  }
+  .playlist-track:last-child {
+    border: none;
+  }
+  
+  .playlist-track button {
+    font-size: 1rem !important;
+    padding: 0.2rem 0.5rem;
+    background: transparent;
+    border-radius: 50%;
+    border-color: #777;
+  }
+  .playlist-details {
+    text-align: start;
+  }
+  .playlist-details h3{
+    font-size: 1.25rem;
+  }
+  
+  .playlist-details small {
+    color: #aaaaaa;
+  }
+  

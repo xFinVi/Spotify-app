@@ -1,0 +1,30 @@
+.form-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  position: relative;
+  margin:auto;
+}
+
+.search-bar {
+  width: 350px;
+  padding: 1rem;
+  height: 40px;
+  border: none;
+  background-color: #232323;
+  color: #fff;
+  border-radius: 30px;
+}
+.search-bar::placeholder {
+  color: #747474;
+  border: none;
+}
+
+.btn .search-icon {
+  color: #fff;
+  border: none;
+}
