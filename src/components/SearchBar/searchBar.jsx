@@ -12,6 +12,7 @@ function SearchBar(props) {
   return (
    
       <div className="form-group">
+        <div className="searchContainer">
         <input
           className="search-bar"
           type="text"
@@ -20,10 +21,12 @@ function SearchBar(props) {
           onKeyDown={handleKeyPress}
           onChange={props.searchInput}
         />
-        <button onClick={props.search} className="btn">
+        <button onClick={props.search} className="search-btn">
           {" "}
           <BiSearch className="search-icon" />
         </button>
+        </div>
+        
       </div>
  
   );

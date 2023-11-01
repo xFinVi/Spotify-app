@@ -290,7 +290,7 @@ const addTracksToPlaylist = async (playlistId) => {
         <button className=" btn btn-danger" onClick={logout}>Logout</button>
       <div className="grid-container mt-5">
       
-        <div className="grid-1 mx-auto">
+        <div className="grid-1">
           <SearchBar
             searchInput={searchInput}
             search={search} // Pass the search function

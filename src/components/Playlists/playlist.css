@@ -5,7 +5,13 @@
   border: none;
   color: #fff;
   border-radius: 10px;
-  background-color: #101010;
+  background-color: #1f1f1f;
+  margin: auto;
+  padding: .5rem;
 }
 
 
+.btn {
+  width: 50%;
+  margin: auto;
+}
