@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import SearchBar from "./components/SearchBar/searchBar";
 import SearchResult from "./components/SearchResults/SearchResults";
 import Playlists from "./components/Playlists/Playlists";
-
+import { MdLogout } from "react-icons/md";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const CLIENT_ID = import.meta.env.VITE_REACT_APP_CLIENT_ID;
@@ -21,7 +21,7 @@ function App() {
   const [playListName, setPlaylistName] = useState(""); // playlist name
   const [playlistTracks, setPlaylistTracks] = useState([]); // tracks in the playlist
   const [playlists, setPlaylists] = useState([
-    { id: uuidv4(), name: "Playlist 1", tracks: [] },
+    { id: uuidv4(), name: "Playlist", tracks: [] },
   ]);
   const [searchResult, setSearchResult] = useState(""); // Initialize with initial tracks
   const [token, setToken] = useState(""); // SPOTIFY ACCESS <TOKEN></TOKEN>
@@ -287,10 +287,10 @@ const addTracksToPlaylist = async (playlistId) => {
       <h1 className="mb-5">Spotify - React</h1>
       {token ? (
         <>
-        <button className=" btn btn-danger" onClick={logout}>Logout</button>
+        <button className=" btn-logout" onClick={logout}><MdLogout/></button>
       <div className="grid-container mt-5">
       
-        <div className="grid-1">
+        <div className="grid-1 ">
           <SearchBar
             searchInput={searchInput}
             search={search} // Pass the search function

@@ -1,5 +1,6 @@
 import React from "react";
 import "./track.styles.css";
+import { IoAddCircleOutline,IoRemoveCircleOutline } from "react-icons/io5";
 
 function Track(props) {
   const { track, isRemoval, onRemove, addTrackToPlaylist } = props;
@@ -7,15 +8,15 @@ function Track(props) {
   const renderAction = () => {
     if (isRemoval) {
       return (
-        <button className="btn-track btn-danger" onClick={() => onRemove(track)}>
-          -
-        </button>
+      
+          <IoRemoveCircleOutline className="btn-track btn-danger" onClick={() => onRemove(track)} />
+    
       );
     } else {
       return (
-        <button className="btn-track btn-light" onClick={() => addTrackToPlaylist(track)}>
-          +
-        </button>
+        
+          <IoAddCircleOutline className="btn-track" onClick={() => addTrackToPlaylist(track)}/>
+       
       );
     }
   };

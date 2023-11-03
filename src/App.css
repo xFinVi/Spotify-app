@@ -25,6 +25,12 @@
   grid-template-columns: 1fr 1fr; /* Two equal-width columns by default */
 
 }
+.btn-logout {
+  background-color: transparent ;
+  color: #c2c2c2;
+  font-size: 1.5rem;
+ 
+}
 
 
 .grid-1 {

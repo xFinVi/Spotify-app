@@ -11,8 +11,8 @@
 }
 
 .search-bar {
-  width: 100%;
-  padding: 2rem;
+  
+  padding: 1rem;
   height: 40px;
   border: none;
   background-color: #232323;
@@ -26,12 +26,12 @@
 .searchContainer {
   position: relative;
   display: inline-block;
-  width: 100%;
+  margin: 0 auto;
 }
 .search-btn {
   position: absolute;
   top: 50%;
-  left: 0; /* Adjust the left position as needed */
+  left: -5px; /* Adjust the left position as needed */
   transform: translateY(-50%);
   background-color: transparent;
 }
@@ -41,8 +41,12 @@
 .search-bar::placeholder {
   color: #747474;
   border: none;
+  transition: all .3s;
 }
 
+.search-bar:focus::placeholder {
+  color: transparent;
+}
 
 
 @media screen and (max-width: 500px) {

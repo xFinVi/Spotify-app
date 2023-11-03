@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Playlist from "../playlist/playlist";
 import './playlist.css';
+import { HiSaveAs } from "react-icons/hi";
+import { MdPlaylistAdd,MdLogout } from "react-icons/md";
 
 function Playlists(props) {
   const [creatingNewPlaylist, setCreatingNewPlaylist] = useState(false);
@@ -49,12 +51,10 @@ function Playlists(props) {
           deletePlaylist={props.deletePlaylist}
         />
       ))}
-      <div>
-      <button className="mt-3 mb-3" onClick={addPlaylistAndTracks}>
-        Save
+      <div className="buttons">
+      <button className="btn-save mt-3 mb-3" onClick={addPlaylistAndTracks}>
+      <HiSaveAs />
       </button>
-
-      </div>
       {creatingNewPlaylist ? (
        
        <div>
@@ -64,16 +64,21 @@ function Playlists(props) {
            onChange={handleNewPlaylistNameChange}
            placeholder="Enter Playlist Name"
          />
-         <button className="btn btn-primary" onClick={saveNewPlaylist}>
+         <button className="btn-save btn-primary" onClick={saveNewPlaylist}>
            Save
          </button>
        </div>
      ) : (
      
-       <button className="btn btn-primary" onClick={createNewPlaylist}>
-         Create New Playlist
+       <button className="btn-create" onClick={createNewPlaylist}>
+         <MdPlaylistAdd/>
        </button>
      )}
+
+      </div>
+
+  
+
     </div>
   );
 }

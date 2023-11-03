@@ -2,6 +2,7 @@
 import { BiSave } from "react-icons/bi";
 import { useState } from "react";
 import './playlist.css';
+import { CiCircleRemove } from "react-icons/ci";
 
 function Playlist(props) {
   const [isEditing, setIsEditing] = useState(false);
@@ -48,9 +49,9 @@ function Playlist(props) {
         </h2>
         {isEditing && (
           <div className="btn-playlist">
-            <button className="btn btn-danger btn-sm" onClick={handleDeleteClick}>
-              X
-            </button>
+            
+              <CiCircleRemove className="btn-remove" onClick={handleDeleteClick}/>
+          
           </div>
         )}
     
@@ -70,13 +71,11 @@ function Playlist(props) {
     <div className="playlist-details">
       <h3>{track.name}</h3>
       <small>{track.artists[0].name}</small>
-    </div>
-    <button
-      className="btn-del btn-primary"
-      onClick={() => props.deleteTrackFromPlaylist(track)}
-    >
-      -
-    </button>
+    </div>   
+     
+    
+      <CiCircleRemove   className="btn-del"  onClick={() => props.deleteTrackFromPlaylist(track)}/>
+    
   </div>
 ))}
         </>

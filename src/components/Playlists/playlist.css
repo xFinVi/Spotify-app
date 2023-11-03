@@ -1,6 +1,41 @@
 .playlists {
   display: flex;
   flex-direction: column;
+  width: 33%;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #161616;
+  margin: auto;
+  padding: .5rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+
+.btn-create {
+  margin: auto;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-save {
+  margin: auto;
+
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+@media  (max-width: 900px) {
+  
+
+.playlists {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   border: none;
   color: #fff;
@@ -10,8 +45,23 @@
   padding: .5rem;
 }
 
+.buttons {
+  display: flex;
+}
 
-.btn {
-  width: 50%;
+
+.btn-create {
   margin: auto;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-save {
+  margin: auto;
+
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+}
 }

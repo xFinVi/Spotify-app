@@ -17,7 +17,7 @@ function SearchBar(props) {
           className="search-bar"
           type="text"
           id="searchBar"
-          placeholder="What do you want to listen to?"
+          placeholder="Search..."
           onKeyDown={handleKeyPress}
           onChange={props.searchInput}
         />

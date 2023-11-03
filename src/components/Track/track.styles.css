@@ -24,16 +24,28 @@
 }
 
 .btn-track {
-    margin: 0;
-    padding:  .3rem .5rem;
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
     background-color: transparent;
-    border: 1px solid #777;
-    border-radius: 50%;
+    cursor: pointer;
+  transition: all 0.2s;
+    padding: 0;
+
     color: #999;
   
 
 }
 
+
+.btn-track:hover {
+    color: #c7c7c7;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    transform: scale(1.05);
+  }
+
+.btn-track:active {
+    transform: scale(0.95); /* Apply the scale animation on button click */
+  }
 
 
